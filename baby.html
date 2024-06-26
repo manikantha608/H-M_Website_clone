@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M Store</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div>&nbsp;</div>
+            <div>
+                <a href="#" class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/640px-H%26M-Logo.svg.png" alt="H&M logo" width="70" height="21">
+                </a>
+            </div>
+            <div>
+              <button class="header-action-btn" id="signinBtn">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                  <p class="header-action-label">Sign in</p>
+              </button>
+          </div>
+            <div class="icon-cart" onclick="window.location.href='cart.html'">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span>0</span>
+            </div>
+        </header>
+
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+                <li><a href="index.html" class="navbar-link">Ladies</a></li>
+                <li><a href="men.html" class="navbar-link">Men</a></li>
+                <li><a href="#baby" class="navbar-link">Baby</a></li>
+                <li><a href="kids.html" class="navbar-link">Kids</a></li>
+                <li><a href="#contact" class="navbar-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- container img -->
+        <div class="container-img" onclick="window.location.href='shop.html'">
+            <img src="./img/babys1.jpeg" alt="Women's Clothing">
+            <div class="banner-content">Baby Clothing</div>
+        </div>
+
+        <div class="container-img" onclick="window.location.href='shop.html'">
+            <img src="./img/babys2.jpeg" alt="Summer essentials">
+            <div class="banner-content">Adorable baby basics</div>
+        </div>
+
+        <div>
+            <h2>New Arrivals</h2>
+        </div>
+
+        <div class="cardtr">
+            <div class="cardtd" onclick="window.location.href='shop.html'">
+                <article class="card">
+                    <img src="./img/baby1.jpeg" alt="Stay conscious">
+                    <div class="content">
+                        <p>
+                            INSIDE H&M <br>
+                            <span style="font-weight:bold;">Stay conscious.</span>
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cardtd" onclick="window.location.href='shop.html'">
+                <article class="card">
+                    <img src="./img/baby2.jpeg" alt="The H&M X MetGala">
+                    <div class="content">
+                        <p>
+                            INSIDE H&M <br>
+                            <span style="font-weight:bold;">The H&M X MetGala</span>
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cardtd" onclick="window.location.href='shop.html'">
+                <article class="card">
+                    <img src="./img/baby3.jpeg" alt="Innovation And Fashion">
+                    <div class="content">
+                        <p>
+                            INSIDE H&M <br>
+                            <span style="font-weight:bold;">Innovation And Fashion</span>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="title">PRODUCT LIST</div>
+        <div class="listProduct"></div>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-last">
+                <div>
+                    <h2>SHOP</h2>
+                    <p>Ladies</p>
+                    <p>Men</p>
+                    <p>Baby</p>
+                    <p>Kids</p>
+                    <p>H&M HOME</p>
+                    <p>Sport</p>
+                    <p>Magazine</p>
+                </div>
+                <div>
+                    <h2>CORPORATE INFO</h2>
+                    <p>Career at H&M</p>
+                    <p>About H&M group</p>
+                    <p>Sustainability H&M Group</p>
+                    <p>Press</p>
+                    <p>Investor Relations</p>
+                    <p>Corporate Governance</p>
+                </div>
+                <div>
+                    <h2>Help</h2>
+                    <p>Customer service</p>
+                    <p>MY H&M</p>
+                    <p>Find a store</p>
+                    <p>Legal & Privacy</p>
+                    <p>Contact</p>
+                    <p>Report a scam</p>
+                    <p>Cookie Notice</p>
+                    <p>Cookie Settings</p>
+                </div>
+                <div>
+                    <p>Sign up now and be the first to know <br>about exclusive offers, latest fashion <br> news & style tips!</p>
+                    <a href="#">Read the story →</a>
+                </div>
+            </div>
+            <div><p>The content of this site is copyright-protected and is the property of H & M Hennes & Mauritz AB.</p></div>
+            <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/640px-H%26M-Logo.svg.png" alt="H&M logo"></div>
+            <div><p>INDIA | Rs.</p></div>
+        </div>
+    </footer>
+      <!-- The Modal -->
+      <div id="signinModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="signin-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign in</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let products = null;
+        // get datas from file json
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                addDataToHTML();
+            })
+            .catch(error => console.error('Error fetching products:', error));
+
+        function addDataToHTML() {
+            // remove datas default from HTML
+            let listProductHTML = document.querySelector('.listProduct');
+
+            // add new datas
+            if(products != null) { // if has data
+                products.forEach(product => {
+                    if(product.id > 16 && product.id <=24){  
+                        let newProduct = document.createElement('a');
+                        newProduct.href = '/detail.html?id=' + product.id;
+                        newProduct.classList.add('item');
+                        newProduct.innerHTML = 
+                        `<img src="${product.image}" alt="${product.name}">
+                        <h2>${product.name}</h2>
+                        <div class="price">Rs.${product.price}</div>`;
+                        listProductHTML.appendChild(newProduct);
+                    }
+                });
+            }
+        }
+
+        var modal = document.getElementById("signinModal");
+
+         // Get the button that opens the modal
+         var btn = document.getElementById("signinBtn");
+
+          // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+         // When the user clicks the button, open the modal
+         btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+         // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

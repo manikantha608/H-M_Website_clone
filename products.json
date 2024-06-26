@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "name":" Linen-blend cropped blouse",
+        "price": 1499,
+        "image": "img/lpro1.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 2,
+        "name":" Balloon-sleeved maxi dress",
+        "price": 2500,
+        "image": "img/lpro2.webp",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 3,
+        "name":" Balloon-sleeved maxi dress",
+        "price": 2900,
+        "image": "img/lpro3.webp",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 4,
+        "name":"Smock-waisted dress",
+        "price": 2000,
+        "image": "img/lpro4.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 5,
+        "name":" Bow-decorated hair clip",
+        "price": 3000,
+        "image": "img/lpro5.webp",
+       "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 6,
+        "name":" Jacquard-weave maxi dress",
+        "price": 2000,
+        "image": "img/lpro6.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 7,
+        "name":" ow-decorated hair clip",
+        "price": 2000,
+        "image": "img/lpro7.webp",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 8,
+        "name":" Sheer off-the-shoulder top",
+        "price": 590,
+        "image": "img/lpro8.webp",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 9,
+        "name":" Loose Fit Sweatshirt",
+        "price": 599,
+        "image": "img/mpro1.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 10,
+        "name":" Oversized Fit T-shirt",
+        "price": 519,
+        "image": "img/mpro2.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 11,
+        "name":" Regular Fit Printed hoodie",
+        "price": 290,
+        "image": "img/mpro3.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 12,
+        "name":" Slim Fit Pima cotton T-shirt",
+        "price": 1999,
+        "image": "img/mpro4.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 13,
+        "name":" Regular Fit Short-sleeved twill resort shirt",
+        "price": 1300,
+        "image": "img/mpro5.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 14,
+        "name":" Loose Fit Printed T-shirt",
+        "price": 1200,
+        "image": "img/mpro6.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 15,
+        "name":" Regular Fit Printed T-shirt",
+        "price": 999,
+        "image": "img/mpro7.jpeg",
+       "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 16,
+        "name":" Regular Fit Printed T-shirt",
+        "price": 699,
+        "image": "img/mpro8.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 17,
+        "name":"  cotton sweatshirts",
+        "price": 1299,
+        "image": "img/bpro1.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 18,
+        "name":" Pile jacket",
+        "price": 799,
+        "image": "img/bpro2.jpeg",
+       "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 19,
+        "name":" wrapover bodysuits",
+        "price": 2999,
+        "image": "img/bpro3.jpeg",
+       "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 20,
+        "name":" long-sleeved bodysuits",
+        "price": 1669,
+        "image": "img/bpro4.jpeg",
+     "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 21,
+        "name":" Printed T-shirt",
+        "price": 799,
+        "image": "img/bpro5.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 22,
+        "name":" jersey T-shirts",
+        "price": 1200,
+        "image": "img/bpro6.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 23,
+        "name":" Motif-detail cotton T-shirt",
+        "price": 899,
+        "image": "img/bpro7.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 24,
+        "name":" printed sweatshirt set",
+        "price": 1200,
+        "image": "img/bpro8.jpeg",
+       "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 25,
+        "name":" Cotton knit jumper",
+        "price": 1199,
+        "image": "img/kpro1.jpeg",
+       "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 26,
+        "name":" Motif-detail ",
+        "price": 799,
+        "image": "img/kpro2.jpeg",
+       "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 27,
+        "name":" Football shirt",
+        "price": 390,
+        "image": "img/kpro3.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 28,
+        "name":" LCotton dress with broderie anglaise",
+        "price": 1599,
+        "image": "img/kpro4.jpeg",
+       "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 29,
+        "name":" Flounced chiffon dress",
+        "price": 1300,
+        "image": "img/kpro5.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 30,
+        "name":" Printed T-shirt",
+        "price": 200,
+        "image": "img/kpro6.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 31,
+        "name":" Flounced chiffon dress",
+        "price": 1699,
+        "image": "img/kpro7.jpeg",
+        "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    },
+    {
+        "id": 32,
+        "name":" Hooded flannel shirt",
+        "price": 200,
+        "image": "img/kpro8.jpeg",
+       "description": "Sheath dresses offer a straight cut and are usually nipped at the waist, without a visible seam. They are perfect for formal business events or dinners, offering a sleek and elegant silhouette."
+    }
+
+]

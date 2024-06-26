@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div>&nbsp;</div>
+        <div>
+          <a href="#" class="logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/640px-H%26M-Logo.svg.png"
+              alt="H&M logo"
+              width="70"
+              height="21"
+            />
+          </a>
+        </div>
+        <div>
+          <button class="header-action-btn">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            <p class="header-action-label">Sign in</p>
+          </button>
+        </div>
+        <a href="cart.html" class="icon-cart">
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 20"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
+            />
+          </svg>
+          <span id="cart-count">0</span>
+        </a>
+      </header>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="index.html" class="navbar-link">Ladies</a>
+          </li>
+          <li>
+            <a href="men.html" class="navbar-link">Men</a>
+          </li>
+          <li>
+            <a href="baby.html" class="navbar-link">Baby</a>
+          </li>
+          <li>
+            <a href="kids.html" class="navbar-link">Kids</a>
+          </li>
+          <li>
+            <a href="contact.html" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="title">PRODUCT DETAIL</div>
+      <div class="detail">
+        <div class="image">
+          <img src="" />
+        </div>
+        <div class="content">
+          <h1 class="name"></h1>
+          <div class="price"></div>
+          <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="add-to-cart-btn">Add To Cart</button>
+          </div>
+          <div class="description"></div>
+        </div>
+      </div>
+      <div class="title">Explore more products</div>
+      <div class="listProduct"></div>
+    </div>
+    <script>
+      let products = null;
+      // get data from file json
+      fetch("products.json")
+        .then((response) => response.json())
+        .then((data) => {
+          products = data;
+          showDetail();
+        });
+
+      function showDetail() {
+        // remove data default from HTML
+        let detail = document.querySelector(".detail");
+        let listProduct = document.querySelector(".listProduct");
+        let productId = new URLSearchParams(window.location.search).get("id");
+        let thisProduct = products.filter((value) => value.id == productId)[0];
+        // if there is no product with id = productId => return to home page
+        if (!thisProduct) {
+          window.location.href = "/";
+        }
+
+        detail.querySelector(".image img").src = thisProduct.image;
+        detail.querySelector(".name").innerText = thisProduct.name;
+        detail.querySelector(".price").innerText = "Rs." + thisProduct.price;
+        detail.querySelector(".description").innerText =
+          thisProduct.description;
+
+        products
+          .filter((value) => value.id != productId)
+          .forEach((product) => {
+            let newProduct = document.createElement("a");
+            let button = "Add To Cart";
+            newProduct.href = "/detail.html?id=" + product.id;
+            newProduct.classList.add("item");
+            newProduct.innerHTML = `<img src="${product.image}" alt="">
+            <h2>${product.name}</h2>
+            <div class="price">Rs.${product.price}</div>
+            `;
+            listProduct.appendChild(newProduct);
+          });
+      }
+
+      let cart = JSON.parse(localStorage.getItem("cart")) || []; // Initialize cart from localStorage
+
+      // Function to add a product to the cart
+      function addToCart() {
+        let productId = new URLSearchParams(window.location.search).get("id");
+        let productToAdd = products.find((product) => product.id == productId);
+
+        if (productToAdd) {
+          // Check if the product is already in the cart
+          let existingItem = cart.find((item) => item.id === productToAdd.id);
+
+          if (existingItem) {
+            // Product already exists in cart, update quantity
+            existingItem.quantity++;
+          } else {
+            // Product doesn't exist in cart, add it
+            productToAdd.quantity = 1; // Initialize quantity
+            cart.push(productToAdd);
+          }
+
+          // console.log("Added to cart:", productToAdd);
+
+          // Update cart count in header
+          updateCartCount();
+
+          // Save cart to localStorage
+          localStorage.setItem("cart", JSON.stringify(cart));
+        } else {
+          console.error("Product not found.");
+        }
+      }
+
+      // Function to update cart count in header
+      function updateCartCount() {
+        let cartCountElement = document.getElementById("cart-count");
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let totalCount = cart.reduce((acc, item) => acc + item.quantity, 0);
+        cartCountElement.textContent = totalCount.toString();
+      }
+
+      // Event listener for "Add To Cart" button click
+      document
+        .getElementById("add-to-cart-btn")
+        .addEventListener("click", addToCart);
+
+      document
+        .querySelector(".icon-cart")
+        .addEventListener("click", function (event) {
+          event.preventDefault(); 
+          // Redirect to cart page
+          window.location.href = "cart.html";
+        });
+
+      // Initialize cart count on page load
+      updateCartCount();
+    </script>
+  </body>
+</html>
